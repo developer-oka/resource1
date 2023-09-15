@@ -21,29 +21,12 @@ dir_path_src_xml = "/work/data/ano/"
 
 label_map_path = "/work/data/label_map.pbtxt"
 
-# トレーニング用
-dir_path_pic_train = "/work/data/pic_t/"
-# 評価用
-dir_path_pic_eval = "/work/data/pic_e/"
 
 # トレーニング用と評価用に分ける
 file_list = os.listdir(dir_path_src)
 random.shuffle(file_list)
 file_list_train = file_list[:len(file_list) * 3 // 4]
 file_list_val = file_list[len(file_list) * 3 // 4:]
-
-os.makedirs(dir_path_pic_train, exist_ok=True)
-os.makedirs(dir_path_pic_eval, exist_ok=True)
-
-for filename in file_list_train:
-    src = os.path.join(dir_path_src, filename)
-    dst = os.path.join(dir_path_pic_train, filename)
-    shutil.copyfile(src, dst)
-
-for filename in file_list_val:
-    src = os.path.join(dir_path_src, filename)
-    dst = os.path.join(dir_path_pic_eval, filename)
-    shutil.copyfile(src, dst)
 
 
 def dict_to_tf_example(data,
