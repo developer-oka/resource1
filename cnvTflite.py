@@ -3,9 +3,6 @@ import os
 import cv2
 import numpy as np
 
-pic_dir = ""
-size = None
-
 saved_model_dir = "/work/data/pet/saved_model_tflite_out/saved_model"
 filename = "/work/data/pet/pet.tflite"
 pic_dir = "/work/data/pet/images/"
