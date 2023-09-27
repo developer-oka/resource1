@@ -4,10 +4,7 @@ import cv2
 import numpy as np
 import time
 
-try:
-    import tflite_runtime.interpreter as tflite
-except:
-    import tensorflow.lite as tflite
+import tensorflow.lite as tflite
 
 
 threshold = 0.7
