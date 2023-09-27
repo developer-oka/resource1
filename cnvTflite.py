@@ -7,7 +7,7 @@ pic_dir = ""
 size = None
 
 saved_model_dir = "/work/data/pet/saved_model_tflite_out/saved_model"
-filename = "/work/data/pet//work/data/pet/pet.tflite"
+filename = "/work/data/pet/pet.tflite"
 pic_dir = "/work/data/pet/images/"
 size = (640, 640)
 
