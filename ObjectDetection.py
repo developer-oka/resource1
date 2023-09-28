@@ -7,7 +7,7 @@ import cv2
 
 img_dir = "/work/data/pet/images/"
 model_path = "/work/data/pet/saved_model_out/saved_model"
-threshold = 0.5
+threshold = 0.7
 
 labels = [
     'Abyssinian',

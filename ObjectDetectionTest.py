@@ -8,7 +8,7 @@ import cv2
 img_dir = "/work/data/pet/images/"
 model_path = "/work/ide/workspace/ObjectDetection/models/research/test_out/saved_model"
 
-threshold = 0.5
+threshold = 0.7
 
 labels = [
     "person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat", "traffic light",
